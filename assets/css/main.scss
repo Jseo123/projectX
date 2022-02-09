@@ -1,0 +1,27 @@
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+height: 100vh;
+    div {
+        min-height: 30%;
+        min-width: 40%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 2%;
+margin-right: 2%;
+    }
+}
+
+
+.redirect:hover {
+cursor: pointer;
+}
+
+
+.nav-link p {
+    font-size: xx-large;
+}
