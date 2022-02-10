@@ -28,6 +28,7 @@ class clienteModel extends Model
                 $item->phone = $row["phone"];
                 $item->restaurant_name = $row["restaurant_name"];
                 $item->user = $row["user"];
+                $item->password = $row["password"];
 
 
                 

@@ -20,7 +20,9 @@
   </nav>
   <div class="alert alert-<?php if(isset($this->added)){echo "success";} else if (isset($this->failed)){echo "danger";}; ?>"><?php if(isset($this->added)){echo $this->added;} else if (isset($this->failed)){echo $this->failed;};?></div>
 <main id="container" class="d-flex justify-content-center">
-<p></p>
+<div id="listHead">
+
+</div>
 </main>
 </body>
 </html>

@@ -37,12 +37,12 @@ class ClientLog extends Controller
     public function failedlog()
     {
         $this->view->message = "Wrong user or password";
-        $this->view->render("clientLog/index");
+        $this->view->render("client/index");
     }
 
     public function forbidden(){
         $this->view->message = "Please log in";
-        $this->view->render("clientLog/index");
+        $this->view->render("client/index");
     }
 
     public function logOUt()
