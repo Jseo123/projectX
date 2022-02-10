@@ -14,4 +14,13 @@ class Cliente extends Controller {
             header("Location:" . BASE_URL . "/clientLog/forbidden");
         }
     }
+
+    
+    public function getRestaurantInfo()
+    {
+        session_start();
+        $id = $_SESSION["id"];
+        $resultArray = $this->model->getRestaurantInfo($id);
+        echo json_encode($resultArray);
+    }
 }

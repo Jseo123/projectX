@@ -24,6 +24,7 @@ class ClientLog extends Controller
             if ($passCheck === true) {
                 session_start();
                 $_SESSION["client"] = $userCheck["user"];
+                $_SESSION["id"] = $userCheck["id"];
                 unset($_POST);
                 header("Location:" . BASE_URL . "/cliente");
             } else {

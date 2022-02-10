@@ -9,7 +9,7 @@ class clientLogModel extends Model {
     public function userCheck($user){
         
         $query = $this->db->connect()->prepare(
-            "SELECT * FROM restaurants WHERE user=:user OR email=:email"
+            "SELECT user, password, email, id FROM restaurants WHERE user=:user OR email=:email"
         );
         try {
             if ($query->execute(["user"=>$user, "email"=>$user])){
