@@ -1,16 +1,17 @@
 <?php
-class adminDash extends Controller {
+class adminDash extends Controller
+{
     function __construct()
     {
         parent::__construct();
     }
 
-    public function render(){
+    public function render()
+    {
         session_start();
-        if(isset($_SESSION["admin"])){
+        if (isset($_SESSION["admin"])) {
             $this->view->render("admin/dashBoard");
-        } 
-        else {
+        } else {
             header("Location:" . BASE_URL . "/adminLog/forbidden");
         }
     }
