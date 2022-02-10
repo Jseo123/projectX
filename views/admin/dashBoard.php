@@ -14,10 +14,10 @@
 <nav class="navbar navbar-light bg-light"><div class="navFlex">
     <a class="navbar-brand" href="panel.php">
       <img src="https://cdn-icons-png.flaticon.com/512/2453/2453333.png" width="70" height="30" class="d-inline-block align-top" alt="">
-    </a><p class="navbar-brand">!Bienvenido de nuevo!</p> <a class="nav-link" href="panel.php">Inicio</a> <a class="nav-link" href="statistics.php">Estadisticas</a> </div><a href="<?=BASE_URL?>/adminLog/logOUt"><button class="btn btn-danger">Log Out</button></a>
+    </a><p class="navbar-brand">!Bienvenido de nuevo <?=($_SESSION["admin"])?>!</p> <a class="nav-link" href="panel.php">Inicio</a> <a class="nav-link" href="statistics.php">Estadisticas</a> </div><a href="<?=BASE_URL?>/adminLog/logOUt"><button class="btn btn-danger">Log Out</button></a>
   </nav>
 <main id="container" class="d-flex justify-content-center">
-<div class="flex-item d-flex justify-content-center navbar navbar-light bg-light"><a href="newRestaurant.php" id="newRestaurant" class="btn btn-outline-success">Crear nuevo restaurante</a></div>
+<div class="flex-item d-flex justify-content-center navbar navbar-light bg-light"><a href="<?=BASE_URL?>/adminNewRestaurant" id="newRestaurant" class="btn btn-outline-success">Crear nuevo restaurante</a></div>
 <div class="flex-item d-flex justify-content-center navbar navbar-light bg-light"><a id="newEmployee" class="btn btn-outline-success">Crear empleado</a></div>
 </main>
 </body>

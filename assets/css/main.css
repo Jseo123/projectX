@@ -1,42 +1,3 @@
-.logMain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-}
-.logMain div {
-  min-height: 30%;
-  min-width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-.logMain h3 {
-  color: #0095f6;
-}
-
-.formu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.formu .form-floating {
-  min-width: 100% !important;
-}
-
-.wrong {
-  margin-top: 2%;
-  width: 100%;
-}
-
-.redirect:hover {
-  cursor: pointer;
-}
-
 .nav-link p {
   font-size: xx-large;
 }
@@ -94,6 +55,45 @@ main {
 
 .flex-item a {
   max-width: fit-content;
+}
+
+.logMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.logMain div {
+  min-height: 30%;
+  min-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.logMain h3 {
+  color: #0095f6;
+}
+
+.formu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formu .form-floating {
+  min-width: 100% !important;
+}
+
+.wrong {
+  margin-top: 2%;
+  width: 100%;
+}
+
+.redirect:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */
