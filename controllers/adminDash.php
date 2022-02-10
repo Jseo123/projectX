@@ -11,8 +11,7 @@ class adminDash extends Controller {
             $this->view->render("admin/dashBoard");
         } 
         else {
-            $this->view->message = "Please log in";
-            header("Location:" . BASE_URL . "/adminLog/failedLog");
+            header("Location:" . BASE_URL . "/adminLog/forbidden");
         }
     }
 }

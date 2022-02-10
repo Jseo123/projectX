@@ -39,6 +39,11 @@ class AdminLog extends Controller
         $this->view->render("admin/index");
     }
 
+    public function forbidden(){
+        $this->view->message = "Please log in";
+        $this->view->render("admin/index");
+    }
+
     public function logOUt()
     {
         session_start();
