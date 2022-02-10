@@ -6,6 +6,13 @@ class adminDash extends Controller {
     }
 
     public function render(){
-        $this->view->render("admin/dashBoard");
+        session_start();
+        if(isset($_SESSION["admin"])){
+            $this->view->render("admin/dashBoard");
+        } 
+        else {
+            $this->view->message = "Please log in";
+            header("Location:" . BASE_URL . "/adminLog/failedLog");
+        }
     }
 }

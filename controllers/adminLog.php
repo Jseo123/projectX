@@ -28,7 +28,7 @@ class AdminLog extends Controller
                 header("Location:" . BASE_URL . "/adminDash");
             } else {
 
-                header("Location:" . BASE_URL . "/login?failedLog");
+                header("Location:" . BASE_URL . "/adminLog/failedLog");
             }
         }
     }
@@ -37,5 +37,29 @@ class AdminLog extends Controller
     {
         $this->view->message = "Wrong user or password";
         $this->view->render("admin/index");
+    }
+
+    public function logOUt()
+    {
+        session_start();
+
+        $_SESSION = array();
+
+        if (ini_get("session.use_cookies")) {
+            $params = session_get_cookie_params();
+            setcookie(
+                session_name(),
+                '',
+                time() - 42000,
+                $params["path"],
+                $params["domain"],
+                $params["secure"],
+                $params["httponly"]
+            );
+        }
+
+        session_destroy();
+
+        header("Location:" . BASE_URL . "/adminLog");
     }
 }
