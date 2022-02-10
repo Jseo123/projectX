@@ -11,7 +11,7 @@
 <body>
 
     <main class="logMain">
-
+<?php echo date("Y-m-d"); ?>
             <div class="client border">
                 <a href="<?= BASE_URL ?>" class="nav-link redirect ">
                     <p>Cliente </p>

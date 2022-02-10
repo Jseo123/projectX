@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<form class="employeeForm" action="<?=BASE_URL?>/adminNewRestaurant/submitRestaurant" method="POST" id="formulary">
+<form class="employeeForm" action="<?=BASE_URL?>/adminNewRestaurant/addRestaurant" method="POST" id="formulary">
             <div class="formFlex">
                 <div class="flexMember">
             <label for="ownerName">Nombre del dueño</label><br>
