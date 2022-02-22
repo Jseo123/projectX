@@ -1,7 +1,9 @@
 const id = document.getElementById("body").dataset.id;
+const tableList = document.getElementById("tableList");
+const main = document.getElementById("container");
+
 window.addEventListener("DOMContentLoaded", async () => {
   let employees = await getEmployees();
-  printMain(employees);
 });
 
 async function getEmployees() {
@@ -10,7 +12,18 @@ async function getEmployees() {
   return data;
 }
 
-async function printMain(employees) {
-  const listHead = document.getElementById("listHead");
-  listHead.classList.add("flex");
-}
+tableList.addEventListener("click", (e) => {
+  while (main.firstChild) {
+    main.removeChild(main.lastChild);
+  }
+
+  let ul = document.createElement("ul");
+  main.appendChild(ul);
+
+  let x = ["Mesa 1", "Mesa 2", "Mesa 3"];
+  let z = x.forEach((element) => {
+    let a = document.createElement("li");
+    a.innerText = element;
+    ul.appendChild(a);
+  });
+});

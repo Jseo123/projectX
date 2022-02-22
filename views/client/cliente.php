@@ -32,7 +32,7 @@
                                   }; ?></div>
   <main id="container" class="d-flex justify-content-around">
     <section>
-      <button class="btn btn-primary">Mostrar mesas</button>
+      <button id="tableList" class="btn btn-primary">Mostrar mesas</button>
     </section>
     <section>
       <button class="btn btn-primary">Mostrar inventario</button>
