@@ -26,14 +26,17 @@
                           } else if (isset($this->failed)) {
                             echo "danger";
                           }; ?>"><?php if (isset($this->added)) {
-                                                                                                                                echo $this->added;
-                                                                                                                              } else if (isset($this->failed)) {
-                                                                                                                                echo $this->failed;
-                                                                                                                              }; ?></div>
-  <main id="container" class="d-flex justify-content-center">
-    <div id="listHead">
-
-    </div>
+                                    echo $this->added;
+                                  } else if (isset($this->failed)) {
+                                    echo $this->failed;
+                                  }; ?></div>
+  <main id="container" class="d-flex justify-content-around">
+    <section>
+      <button class="btn btn-primary">Mostrar mesas</button>
+    </section>
+    <section>
+      <button class="btn btn-primary">Mostrar inventario</button>
+    </section>
   </main>
 </body>
 
